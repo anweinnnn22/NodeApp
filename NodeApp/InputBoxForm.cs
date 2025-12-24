@@ -360,7 +360,7 @@ namespace NodeApp
 
             // 抖动动画：输入框左右晃动3次，提示用户输入错误
             var originalLocation = inputTextBox.Location; // 保存原始位置
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 30; i++)
             {
                 inputTextBox.Location = new Point(originalLocation.X - 5, originalLocation.Y); // 左移5px
                 Application.DoEvents();                                                       // 刷新界面
